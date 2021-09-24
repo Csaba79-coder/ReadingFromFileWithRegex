@@ -10,7 +10,12 @@ public class Processor {
 
     public void run() {
 
+        Print print = new Print();
+
+        String copyWrite = new CopyRight().addingCopyright();
+        print.printString(copyWrite);
+
         List<MobileDevice> mobileDevices = new FileHandler().readDevicesIntoList();
-        new Print().printMobileDeviceList(mobileDevices);
+        print.printMobileDeviceList(mobileDevices);
     }
 }

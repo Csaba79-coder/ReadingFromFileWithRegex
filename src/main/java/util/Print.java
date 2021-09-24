@@ -11,4 +11,8 @@ public class Print {
             System.out.println(mobileDevice);
         }
     }
+
+    public void printString(String text) {
+        System.out.println(text);
+    }
 }
