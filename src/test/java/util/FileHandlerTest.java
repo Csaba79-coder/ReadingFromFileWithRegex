@@ -27,7 +27,7 @@ public class FileHandlerTest {
         MockedStatic<ConfigReader> configMock = Mockito.mockStatic(ConfigReader.class);
         // they bellow are the same!
         // configMock.when(() -> ConfigReader.getPath()).thenReturn("src/test/resources/regexExample.txt"); // this one is lambda!
-        configMock.when(ConfigReader::getPath).thenReturn("src/test/resources/regexExample.txt"); // this one is double colon operator!
+        configMock.when(ConfigReader::getPath).thenReturn("src/test/resources/regexExampleTest.txt"); // this one is double colon operator!
 
         List<MobileDevice> expectedDevices = Arrays.asList(
                 new MobileDevice("SM-J510FN"),
