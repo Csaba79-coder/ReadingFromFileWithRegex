@@ -1,5 +1,6 @@
 package module;
 
+import model.LambdaBeforeAndAfter;
 import model.MobileDevice;
 import util.FileHandler;
 import util.Print;
@@ -17,5 +18,9 @@ public class Processor {
 
         List<MobileDevice> mobileDevices = new FileHandler().readDevicesIntoList();
         print.printMobileDeviceList(mobileDevices);
+
+        System.out.println("----------------Lambda-----------------");
+        
+        new LambdaBeforeAndAfter().runLambda();
     }
 }
