@@ -20,7 +20,7 @@ public class Processor {
         print.printMobileDeviceList(mobileDevices);
 
         System.out.println("----------------Lambda-----------------");
-        
+
         new LambdaBeforeAndAfter().runLambda();
     }
 }
